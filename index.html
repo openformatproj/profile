@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-gray-100 antialiased">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alessandro Trifoglio - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 60px;
+            background-color: #fca5a5;
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="max-w-4xl mx-auto p-6 md:p-8 lg:p-10">
+
+        <!-- Header Section -->
+        <header class="bg-white shadow-lg rounded-xl p-8 mb-8 flex flex-col md:flex-row items-center md:items-start space-y-4 md:space-y-0 md:space-x-8">
+            <div class="flex-shrink-0">
+                <img src="https://raw.githubusercontent.com/openformatproj/profile/refs/heads/main/img/photo.jpg" alt="Alessandro Trifoglio" class="h-24 w-24 md:h-32 md:w-32 rounded-full border-4 border-gray-200">
+            </div>
+            <div class="text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight">Alessandro Trifoglio</h1>
+                <p class="text-xl md:text-2xl mt-2 text-gray-500">Senior FPGA & Embedded Software Engineer</p>
+                <p class="mt-4 text-gray-600 max-w-xl mx-auto md:mx-0">Highly skilled in designing and developing low-latency, real-time software and hardware solutions for mission-critical systems. With over a decade of experience, I excel at the intersection of embedded software, hardware co-design, and advanced algorithm implementation.</p>
+                <div class="flex flex-wrap justify-center md:justify-start space-x-4 mt-6 text-gray-600">
+                    <a href="https://www.linkedin.com/in/alessandro-trifoglio" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:text-red-400 transition-colors">
+                        <i class="fab fa-linkedin text-red-400"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/openformatproj" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:text-red-400 transition-colors">
+                        <i class="fab fa-github text-red-400"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:a.trifoglio@gmail.com" class="flex items-center space-x-2 hover:text-red-400 transition-colors">
+                        <i class="fas fa-envelope text-red-400"></i>
+                        <span>a.trifoglio@gmail.com</span>
+                    </a>
+                    <a href="https://openformatproj.github.io/profile/cv.html" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:text-red-400 transition-colors">
+                        <i class="fas fa-file-alt text-red-400"></i>
+                        <span>Full CV</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Core Competencies Section -->
+        <section class="bg-white shadow-lg rounded-xl p-6 mb-8">
+            <h2 class="text-2xl font-semibold section-title">Core Competencies</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700">
+                <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+                    <i class="fas fa-microchip flex-shrink-0 text-3xl text-red-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Embedded Software</h4>
+                        <p class="text-sm">Mastery of C/C++, bare-metal, and real-time operating systems (RTOS) for ARM-based CPUs.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+                    <i class="fas fa-gears flex-shrink-0 text-3xl text-red-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">FPGA Development</h4>
+                        <p class="text-sm">Expertise in FPGA design using VHDL/SystemVerilog, specializing in Xilinx Zynq platforms.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+                    <i class="fas fa-code-branch flex-shrink-0 text-3xl text-red-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">System Integration</h4>
+                        <p class="text-sm">Experienced with Linux kernel internals, device drivers, and seamless hardware-software co-design.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+                    <i class="fas fa-robot flex-shrink-0 text-3xl text-red-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Algorithms & Robotics</h4>
+                        <p class="text-sm">Developed and implemented video tracking algorithms and computer vision pipelines for real-world systems.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+                    <i class="fas fa-tachometer-alt flex-shrink-0 text-3xl text-red-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Low-Latency Systems</h4>
+                        <p class="text-sm">Proven track record in optimizing code and hardware for low-latency, high-throughput applications.</p>
+                    </div>
+                </div>
+                <div class="grid grid-cols-[auto_1fr] gap-4 items-start">
+                    <i class="fas fa-globe flex-shrink-0 text-3xl text-red-400"></i>
+                    <div>
+                        <h4 class="font-semibold text-gray-900">Continuous Integration</h4>
+                        <p class="text-sm">Proficient with Git, GitHub Actions, and creating custom Python-based CI/CD pipelines.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section class="bg-white shadow-lg rounded-xl p-6 mb-8">
+            <h2 class="text-2xl font-semibold section-title">Professional Experience</h2>
+            <div class="space-y-8 text-gray-700">
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <img src="https://raw.githubusercontent.com/openformatproj/profile/24ec8f74c305024c089927dcd315b309846da839/img/leonardo_logo.svg" alt="Leonardo Logo" class="h-6 w-auto">
+                        <h3 class="font-semibold text-xl text-gray-900">Leonardo SpA</h3>
+                    </div>
+                    <p class="italic text-gray-500 text-sm">Senior Embedded Software Engineer | 2020 - Now</p>
+                    <p class="mt-2 leading-relaxed">At Leonardo, I lead the development of embedded software and FPGA systems for mission-critical defense products. My work focuses on real-time solutions and seamless hardware-software integration. I've been responsible for developing complex algorithms, managing board bring-up, and ensuring compliance with rigorous defense standards like DO-254.</p>
+                </div>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <i class="fas fa-briefcase text-red-400 text-xl"></i>
+                        <h3 class="font-semibold text-xl text-gray-900">Freelance</h3>
+                    </div>
+                    <p class="italic text-gray-500 text-sm">Electronic & Software Engineer | 2012 - 2018</p>
+                    <p class="mt-2 leading-relaxed">In my freelance work, I provided comprehensive solutions for companies, from designing custom electronic boards and micro-controller software to developing full-stack administrative applications. This experience honed my versatility and ability to manage end-to-end projects from concept to deployment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Awards & Recognition Section -->
+        <section class="bg-white shadow-lg rounded-xl p-6 mb-8">
+            <h2 class="text-2xl font-semibold section-title">Key Achievements</h2>
+            <div class="flex flex-col items-center justify-center">
+                <img src="https://raw.githubusercontent.com/openformatproj/profile/refs/heads/main/img/Innovation_Award_2024.png" alt="Leonardo Innovation Award" class="w-full md:w-3/4 rounded-lg shadow-md">
+                <p class="mt-4 text-center text-gray-600">Leonardo Innovation Award 2024 <br /> My work: "Simulation of a UAV on Unreal Engine"</p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="bg-white shadow-lg rounded-xl p-6">
+            <h2 class="text-2xl font-semibold section-title">Education</h2>
+            <div class="space-y-6 text-gray-700">
+                <div>
+                    <p class="font-semibold text-gray-900">Master of Science in Embedded Computing Systems</p>
+                    <p class="text-sm text-gray-500">Scuola Superiore Sant'Anna (PI) | 2016-2020</p>
+                </div>
+                <div>
+                    <p class="font-semibold text-gray-900">Bachelor Degree in Electronic Engineering</p>
+                    <p class="text-sm text-gray-500">Università di Pisa (PI) | 2015</p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
