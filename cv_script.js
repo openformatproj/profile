@@ -3,4 +3,5 @@
     const printDate = new Date().toLocaleDateString('en-US', dateOptions);
     const headerText = `Current version: ${printDate}. Updated version: https://openformatproj.github.io/profile/cv.html`;
     document.documentElement.setAttribute('header-text', headerText);
+    document.title = `${document.title} - ${printDate}`;
 })();
