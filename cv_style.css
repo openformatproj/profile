@@ -253,11 +253,73 @@ body {
 
 /* --- PRINT STYLES --- */
 @media print {
+    body {
+        padding: 0;
+        margin: 0;
+        font-size: 13px;
+    }
+    .resume {
+        flex-direction: row;
+        box-shadow: none;
+        border-radius: 0;
+        max-width: 100%;
+    }
+    .resume_left {
+        width: 35%;
+        border-radius: 0;
+        -webkit-print-color-adjust: exact; /* Chrome, Safari */
+        print-color-adjust: exact; /* Firefox */
+    }
+    .resume_right {
+        width: 65%;
+        border-radius: 0;
+    }
+    .resume_content .title p.bold {
+        font-size: 21px;
+    }
+    .resume_content .title p.regular {
+        font-size: 15px;
+    }
+    .resume_item .title p.bold {
+        font-size: 18px;
+    }
+    .resume_work ul li .info .semi-bold, .resume_education ul li .info .semi-bold {
+        font-size: 15px;
+    }
     .resume_about, .resume_work, .resume_education, .resume_interests p {
-        font-size: 14px;
+        font-size: 12px;
+    }
+    .resume_info .icon {
+        display: none;
+    }
+    .resume_info ul li {
+        display: block; /* Override flex display for print */
+    }
+    .resume_info ul li::before {
+        font-weight: 500;
+        margin-right: 10px;
+    }
+
+    .resume_info ul li:nth-child(1)::before {
+        content: "Place:";
+    }
+    .resume_info ul li:nth-child(2)::before {
+        content: "Email:";
+    }
+    .resume_info ul li:nth-child(3)::before {
+        content: "Phone:";
+    }
+    .resume_info ul li:nth-child(4)::before {
+        content: "Github:";
+    }
+    .resume_info ul li:nth-child(5)::before {
+        content: "Linkedin:";
     }
     .link-icon {
         display: none;
+    }
+    a {
+        text-decoration: none;
     }
     .page-break {
         page-break-after: always;
