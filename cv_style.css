@@ -55,6 +55,7 @@ body {
 .resume_content .title p.regular {
     font-size: 18px;
     font-weight: 500;
+    text-align: left;
 }
 
 .resume_item {
